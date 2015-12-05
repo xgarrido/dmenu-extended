@@ -22,7 +22,7 @@ path_cache = path_base + '/cache'
 path_prefs = path_base + '/config'
 path_plugins = path_base + '/plugins'
 
-file_prefs = path_prefs + '/dmenuExtended_preferences.txt'
+file_prefs = path_prefs + '/dmenuExtended_preferences.json'
 file_cache = path_cache + '/dmenuExtended_all.txt'
 file_cache_binaries = path_cache + '/dmenuExtended_binaries.txt'
 file_cache_files = path_cache + '/dmenuExtended_files.txt'
