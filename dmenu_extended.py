@@ -99,7 +99,8 @@ default_prefs = {
     "terminal": "xterm",                # Terminal
     "indicator_submenu": "→",           # Symbol to indicate a submenu item
     "indicator_edit": "*",              # Symbol to indicate an item will launch an editor
-    "indicator_alias": "#"              # Symbol to indecate an aliased command
+    "indicator_alias": "#",             # Symbol to indecate an aliased command
+    "plugins_index_url": "https://raw.githubusercontent.com/markjones112358/dmenu-extended-plugins/master/plugins_index.json"
 }
 
 
@@ -830,11 +831,11 @@ class extension(dmenu):
 
     title = 'Settings'
     is_submenu = True
+    plugins_index_url = 'https://raw.githubusercontent.com/markjones112358/dmenu-extended-plugins/master/plugins_index.json'
 
     def __init__(self):
         self.load_preferences()
-
-    plugins_index_url = 'https://raw.githubusercontent.com/markjones112358/dmenu-extended-plugins/master/plugins_index.json'
+        plugins_index_url = self.prefs['plugins_index_url']
 
     def rebuild_cache(self):
         if self.debug:
