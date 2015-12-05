@@ -1120,7 +1120,7 @@ def run(debug=False):
     if debug:
         d.debug = True
     cache = d.cache_load()
-    out = d.menu(cache,'Open:').strip()
+    out = d.menu(cache,'λ').strip()
     if len(out) > 0:
         if debug:
             print("Menu closed with user input: " + out)
